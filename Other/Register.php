@@ -1,5 +1,5 @@
 <?php
-	$con = mysqli_connect("localhost", "id974431_nutri", "12345", "id974431_example");
+	$con = mysqli_connect("files.000webhost.com", "id974431_nutri", "123456", "id974431_example");
 	$First = $_POST["First"];
 	$Last = $_POST["Last"];
 	$Birthdate = $_POST["Birthdate"];
@@ -7,7 +7,7 @@
 	$username = $_POST["username"];
 	$password = $_POST["password"];
 	
-	$statement = mysqli_prepare($con, "INSERT INTO user (First, Last, Birthdate, email, username, password) VALUES(?, ?, ?, ?)");
+	$statement = mysqli_prepare($con, "INSERT INTO User (First, Last, Birthdate, email, username, password) VALUES(?, ?, ?, ?, ?, ?)");
 	mysqli_stmt_bind_param($statement, "siss", $First, $Last, $Birthdate, $email, $username, $password);
 	mysqli_stmt_execute($statement);
 	
