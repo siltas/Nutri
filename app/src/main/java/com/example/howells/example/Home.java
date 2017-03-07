@@ -13,6 +13,8 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        /* creating a link between the input fields in the layout/activity
+         and the code in the class, so we can verify the user and password. */
         final EditText text_Email = (EditText) findViewById(R.id.text_User);
         final EditText text_User = (EditText) findViewById(R.id.text_User);
         final EditText text_Password = (EditText) findViewById(R.id.text_Password);

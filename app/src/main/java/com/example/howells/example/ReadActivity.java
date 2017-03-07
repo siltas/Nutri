@@ -1,3 +1,4 @@
+//Barcode Scanner Code
 package com.example.howells.example;
 
 import android.app.Activity;
