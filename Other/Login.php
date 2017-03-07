@@ -1,11 +1,11 @@
 <?php
-	$con = mysqli_connect("localhost", "id974431_nutri", "12345", "id974431_example");
+	$con = mysqli_connect("files.000webhost.com", "id974431_nutri", "123456", "id974431_example");
 	
 	$username = $_POST["username"];
 	$email = $_POST["email"];
 	$password = $_POST["password"];
 	
-	$statement = mysqli_prepare($con, "SELECT * FROM user WHERE ((username = ? AND password = ?) OR (email = ? AND password = ?)) ");
+	$statement = mysqli_prepare($con, "SELECT * FROM User WHERE ((username = ? AND password = ?) OR (email = ? AND password = ?)) ");
 	mysqli_stmt_bind_param($statement, "ss", $username, $password);
 	mysqli_stmt_execute($statement);
 	
@@ -23,7 +23,7 @@
 			$response["Birthdate"] = $Birthdate;
 			$response["email"] = $email;
 			$response["Username"] = $username;
-			$response["password"] = password;
+			$response["password"] = $password;
 	}
 	
 	echo json_encode($response);
