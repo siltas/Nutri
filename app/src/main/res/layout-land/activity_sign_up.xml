@@ -99,6 +99,7 @@
         android:layout_alignStart="@+id/text_First"
         android:hint="Last Name" />
 
+    //Register Button
     <Button
         android:text="Finish"
         android:background="#9EB9D4"

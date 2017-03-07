@@ -93,6 +93,7 @@
         android:layout_alignStart="@+id/text_ConPass"
         android:hint="Birthdate" />
 
+//Register Button
     <Button
         android:text="Finish"
         android:layout_width="wrap_content"
