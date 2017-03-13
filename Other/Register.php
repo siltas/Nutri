@@ -1,5 +1,5 @@
 <?php
-	$con = mysqli_connect("files.000webhost.com", "id974431_nutri", "123456", "id974431_example");
+	$con = mysqli_connect("localhost", "id974431_nutri", "123456", "id974431_example");
 	$First = $_POST["First"];
 	$Last = $_POST["Last"];
 	$Birthdate = $_POST["Birthdate"];
